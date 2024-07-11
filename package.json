@@ -1,10 +1,18 @@
 {
+  "type": "module",
+  "exports": "./index.ts",
   "scripts": {
-    "start": "ts-node index.ts",
+    "start": "node --no-warnings=ExperimentalWarning --loader ts-node/esm index.ts",
     "build": "tsc"
   },
   "devDependencies": {
     "ts-node": "^10.9.2",
     "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^4.4.168"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }

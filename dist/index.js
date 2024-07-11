@@ -1,5 +1,6 @@
+import { getDocument } from "pdfjs-dist";
 async function main() {
-    console.log("hey there");
+    console.log("getDocument");
+    console.log(getDocument);
 }
 void main();
-export {};
